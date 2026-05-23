@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tienda de Bolsos</title>
+  <link rel="stylesheet" href="estilos.css"/>
+</head>
+<body>
+
+  <header class="encabezado">
+    <div class="encabezado-contenido">
+      <h1>Bolsos & Co.</h1>
+      <p>Tu estilo, tu eleccion</p>
+    </div>
+  </header>
+
+  <main class="contenedor-principal">
+
+    <aside class="panel-filtros">
+      <h2>Filtrar</h2>
+
+      <div class="grupo-filtro">
+        <label for="buscar">Buscar por nombre</label>
+        <input type="text" id="buscar" placeholder="Ej: Tote, Clutch..." />
+      </div>
+
+      <div class="grupo-filtro">
+        <label for="sel-categoria">Categoria</label>
+        <select id="sel-categoria">
+          <option value="">Todas</option>
+          <option value="Casual">Casual</option>
+          <option value="Formal">Formal</option>
+          <option value="Deportivo">Deportivo</option>
+          <option value="Viaje">Viaje</option>
+        </select>
+      </div>
+
+      <div class="grupo-filtro">
+        <label for="sel-color">Color</label>
+        <select id="sel-color">
+          <option value="">Todos</option>
+          <option value="Negro">Negro</option>
+          <option value="Cafe">Cafe</option>
+          <option value="Beige">Beige</option>
+          <option value="Rojo">Rojo</option>
+          <option value="Azul">Azul</option>
+        </select>
+      </div>
+
+      <button id="resetear">Resetear filtros</button>
+      <p id="info-resultados" class="info-resultados"></p>
+    </aside>
+
+    <section class="seccion-productos">
+      <div id="grilla" class="grilla"></div>
+      <div id="aviso-vacio" class="aviso-vacio oculto">
+        <p>Ningun producto coincide con tu busqueda.</p>
+        <small>Intenta con otros filtros.</small>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="pie">
+    <p>Bolsos &amp; Co. &mdash; Proyecto educativo</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
